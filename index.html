@@ -164,6 +164,52 @@
         border: dashed 2px;
         transition-duration: 1s;
     }
+
+    .boxs1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30%;
+        margin-left: 10px;
+    }
+
+    .boxs2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    input {
+        width: 60px;
+        height: 25px;
+        border-radius: 2px;
+        border: none;
+        
+    }
+
+    .res {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 40px;
+        transition-duration: 1s;
+    }
+
+    .start {
+        color: aliceblue;
+        background-color: rgb(57, 159, 255);
+        width: 70%;
+        height: 30px;
+        margin-left: 15%;
+        margin-top: 20px;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 1px 1px 5px rgb(105, 105, 105);
+        transition-duration: 0.5s;
+    }
+
+    .start:hover {
+        background-color: rgb(126, 193, 255);
+    }
     
     </style>
     
@@ -214,13 +260,35 @@
     </div>
 
     <div class="shapediv">
-        <div id="shape1"></div>
-        <div id="shape2"></div>
+        <div id="shape1">
+            <div class="boxs1">
+                <input id="val1" type="number">
+                <p>KG</p>
+            </div>
+            
+            <div class="boxs2">
+                <input id="val2" type="number">
+                <p>M</p>
+            </div>
+           
+        </div>
+        <div id="shape2">
+            <p id="result" class="res">0</p>
+            <button onclick="cal()" class="start">Start</button>
+        </div>
     </div>
 
 </div>
 
 <script>
+
+function cal() {
+  var x = document.getElementById("val1").value;
+  var y = document.getElementById("val2").value;
+  var xy = (x/(y*y));
+  document.getElementById("result").innerHTML = Math.round(xy);
+}
+
 function dark() {
   document.body.style.backgroundColor = "rgb(33, 21, 88)";
   document.body.style.transition = "all 2s";
