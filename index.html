@@ -177,10 +177,23 @@
         background-color: rgb(126, 193, 255);
     }
 
+    .resdiv {
+        width: 98%;
+        height: 30px;
+        margin: 0 auto;
+    }
+
     .restxt {
-        width: 100%;
-        height: 20px;
+        height: 30px;
         background-color: blueviolet;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .resword {
+        font-size: 20px;
     }
     
     </style>
@@ -245,13 +258,29 @@
 
 </div>
 
+<div class="resdiv">
+    <div class="restxt" id="restxt">
+        <p class="resword" id="resword">...</p>
+    </div>
+</div>
+
 <script>
 
 function cal() {
   var x = document.getElementById("val1").value;
   var y = document.getElementById("val2").value;
   var xy = (x/(y*y));
-  document.getElementById("result").innerHTML = Math.round(xy);
+  res = Math.round(xy);
+  document.getElementById("result").innerHTML = res;
+  if(res < 18) {
+    document.getElementById("resword").innerHTML = "Underweight";
+  }else if(18 < res , res < 25) {
+    document.getElementById("resword").innerHTML = "Healthy weight";
+  }else if (25 < res , res < 30) {
+    document.getElementById("resword").innerHTML = "Overweight";
+  }else if(res > 30) {
+    document.getElementById("resword").innerHTML = "Obese";
+  }
 }
 
 function dark() {
@@ -266,6 +295,8 @@ function dark() {
   document.getElementById("main").style.transition = "all 2s";
   document.getElementById("shape1").style.transition = "all 2s";
   document.getElementById("shape2").style.transition = "all 2s";
+  document.getElementById("restxt").style.backgroundColor = "rgb(82, 58, 192)";
+  document.getElementById("restxt").style.transition = "all 2s";
 }
 
 function pic1() {
