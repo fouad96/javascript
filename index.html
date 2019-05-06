@@ -44,31 +44,6 @@
         color: aliceblue;
     }
 
-    .ul1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 0px;
-        margin: 0px;
-        background-color: rgb(152, 75, 224);
-    }
-
-    .li1 {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    .li1:hover {
-        background-color: blueviolet;
-        border-radius: 5px;
-        transition-duration: 0.7s;
-    }
-
-    .li1:active {
-        background-color: rgb(82, 26, 134);
-        color: black;
-        border-radius: 5px;
-    }
-
     .ul2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -112,35 +87,30 @@
         padding: 3px;
     }
 
-    .all {
-        padding: 10px;
-        margin: 0 auto;
-        width: 95%;
-        height: 210px;
+    .all div {
+        padding: 5px;
     }   
 
     #main {
         padding-top: 10px;
-        width: 100%;
-        height: 200px;
         background-color: rgb(76, 43, 226);
-        box-shadow: 1px 1px 5px rgb(165, 165, 165);
+        box-shadow: 1px 1px 5px #a5a5a5;
         border-radius: 3px;
     }
 
-    .shapediv {
-        height: 150px;
+    .shapes {
         display: grid;
-        padding: 10px;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
+        grid-gap: 10px;
     }
 
     #shape1 {
         background-color: blueviolet;
         box-shadow: 1px 1px 5px rgb(165, 165, 165);
         border-radius: 3px;
-    }
+        
+        
+        }
 
     #shape2 {
         background-color: blueviolet;
@@ -167,16 +137,13 @@
 
     .boxs1 {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        margin-top: 30%;
-        margin-left: 10px;
+        grid-template-columns: 2fr 2fr;
     }
 
     .boxs2 {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        margin-top: 10px;
-        margin-left: 10px;
+        grid-template-columns: 2fr 2fr;
+        margin-top: 20px;
     }
 
     input {
@@ -189,7 +156,6 @@
 
     .res {
         text-align: center;
-        margin-top: 30px;
         font-size: 40px;
         transition-duration: 1s;
     }
@@ -199,8 +165,8 @@
         background-color: rgb(57, 159, 255);
         width: 70%;
         height: 30px;
-        margin-left: 15%;
-        margin-top: 20px;
+        position: relative;
+        left: 15%;
         border: none;
         border-radius: 2px;
         box-shadow: 1px 1px 5px rgb(105, 105, 105);
@@ -210,6 +176,12 @@
     .start:hover {
         background-color: rgb(126, 193, 255);
     }
+
+    .restxt {
+        width: 100%;
+        height: 20px;
+        background-color: blueviolet;
+    }
     
     </style>
     
@@ -218,30 +190,20 @@
 
     <div class="top">
         <div class="detail">
-            <div class="icons" ><i class="fa fa-home" style="font-size:23px;color:white"></i></div>
+            <div class="icons"><i class="fa fa-home" style="font-size:23px;color:white"></i></div>
             <div class="titlediv"><p class="title">Javascript App</p></div>
             
-            <div class="icons"><i class="fa fa-bars" style="font-size:20px;color:white""></i></div>
+            <div class="icons" onclick="dark()"><i class="fa fa-bars" style="font-size:20px;color:white"></i></div>
         </div>
 
         
-    </div>
-
-    <div>
-        <ul class="ul1">
-            <li onclick="dark()" class="li1"><p>dark</p></li>
-            <li onclick="blue()" class="li1"><p>green</p></li>
-            <li onclick="black()" class="li1"><p>light</p></li>
-            <li class="li1"><p>blue</p></li>
-        </ul>
     </div>
 
 <div class="all">
 
     <div id="main">
         <div class="avatardiv">
-            <p class="avatar">Avatar</p>
-        </div>
+        <p class="avatar">Avatar</p>
 
             <div class="imgdiv">
                 <div id="img"></div>
@@ -259,7 +221,7 @@
         </div>
     </div>
 
-    <div class="shapediv">
+    <div class="shapes">
         <div id="shape1">
             <div class="boxs1">
                 <input id="val1" type="number">
@@ -276,7 +238,10 @@
             <p id="result" class="res">0</p>
             <button onclick="cal()" class="start">Start</button>
         </div>
+
     </div>
+
+</div>
 
 </div>
 
@@ -301,16 +266,6 @@ function dark() {
   document.getElementById("main").style.transition = "all 2s";
   document.getElementById("shape1").style.transition = "all 2s";
   document.getElementById("shape2").style.transition = "all 2s";
-}
-
-function blue() {
-  document.getElementById("main").style.backgroundColor = "blue";
-  document.getElementById("txt").innerHTML = "im blue";
-}
-
-function black() {
-  document.getElementById("main").style.backgroundColor = "black";
-  
 }
 
 function pic1() {
