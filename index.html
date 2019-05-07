@@ -143,7 +143,7 @@
     .boxs2 {
         display: grid;
         grid-template-columns: 2fr 2fr;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     input {
@@ -184,7 +184,7 @@
     }
 
     .restxt {
-        height: 30px;
+        height: 60px;
         background-color: blueviolet;
         margin: 0 auto;
         border-radius: 5px;
@@ -194,6 +194,37 @@
 
     .resword {
         font-size: 20px;
+    }
+
+    .fullbar {
+        margin: 5px;
+        height: 20px;
+        background-color: #DDD;
+        overflow: hidden;
+        border: 1px solid #BBB;
+        -webkit-border-radius: 15px;
+           -moz-border-radius: 15px;
+                border-radius: 15px;
+    }
+    .mainbar {
+        background-color: rgb(255, 166, 0);
+        background-size: 40px 40px;
+        width: 0%;
+        height: 20px;
+        -webkit-transition: width 2s ease;
+           -moz-transition: width 2s ease;
+            -ms-transition: width 2s ease;
+             -o-transition: width 2s ease;
+                transition: width 2s ease;
+        -webkit-animation: bganim 3s linear 2s infinite;
+           -moz-animation: bganim 3s linear 2s infinite;
+            -ms-animation: bganim 3s linear 2s infinite;
+             -o-animation: bganim 3s linear 2s infinite;
+                animation: bganim 3s linear 2s infinite;
+    }
+
+    :checked + .progress-bar .progress-color{
+        width: 100%;
     }
     
     </style>
@@ -220,15 +251,6 @@
 
             <div class="imgdiv">
                 <div id="img"></div>
-            </div>
-
-            <div>
-                 <ul class="ul2">
-                    <li onclick="pic1()" class="li2"><p>pic1</p></li>
-                    <li onclick="pic2()" class="li2"><p>pic2</p></li>
-                    <li onclick="pic3()" class="li2"><p>pic3</p></li>
-                    <li onclick="pic4()"class="li2"><p>pic4</p></li>
-                 </ul>
             </div>
 
         </div>
@@ -261,6 +283,9 @@
 <div class="resdiv">
     <div class="restxt" id="restxt">
         <p class="resword" id="resword">...</p>
+        <div class="fullbar">
+            <div class="mainbar" id="mainbar"></div>
+        </div>
     </div>
 </div>
 
@@ -274,12 +299,27 @@ function cal() {
   document.getElementById("result").innerHTML = res;
   if(res < 18) {
     document.getElementById("resword").innerHTML = "Underweight";
+    document.getElementById("mainbar").style.width = "25%";
+    document.getElementById("mainbar").style.backgroundColor = "rgb(255, 166, 0)";
+    document.getElementById("mainbar").style.transition = "all 2s";
+
   }else if(18 < res , res < 25) {
     document.getElementById("resword").innerHTML = "Healthy weight";
+    document.getElementById("mainbar").style.width = "50%";
+    document.getElementById("mainbar").style.backgroundColor = "rgb(13, 218, 74)";
+    document.getElementById("mainbar").style.transition = "all 2s";
+
   }else if (25 < res , res < 30) {
     document.getElementById("resword").innerHTML = "Overweight";
+    document.getElementById("mainbar").style.width = "75%";
+    document.getElementById("mainbar").style.backgroundColor = "rgb(255, 68, 140)";
+    document.getElementById("mainbar").style.transition = "all 2s";
+
   }else if(res > 30) {
     document.getElementById("resword").innerHTML = "Obese";
+    document.getElementById("mainbar").style.width = "100%";
+    document.getElementById("mainbar").style.backgroundColor = "red";
+    document.getElementById("mainbar").style.transition = "all 2s";
   }
 }
 
@@ -297,22 +337,6 @@ function dark() {
   document.getElementById("shape2").style.transition = "all 2s";
   document.getElementById("restxt").style.backgroundColor = "rgb(82, 58, 192)";
   document.getElementById("restxt").style.transition = "all 2s";
-}
-
-function pic1() {
-    document.getElementById("img").style.content = "url('https://cdn.iconscout.com/icon/free/png-256/avatar-372-456324.png')";
-}
-
-function pic2() {
-    document.getElementById("img").style.content = "url('https://cdn1.iconfinder.com/data/icons/avatar-3/512/Manager-512.png')";
-}
-
-function pic3() {
-    document.getElementById("img").style.content = "url('https://banner2.kisspng.com/20180326/wzw/kisspng-computer-icons-user-profile-avatar-female-profile-5ab915f791e2c1.8067312315220792235976.jpg')";
-}
-
-function pic4() {
-    document.getElementById("img").style.content = "url('https://image.flaticon.com/icons/png/512/194/194920.png')";
 }
 </script>
     
