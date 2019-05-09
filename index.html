@@ -15,7 +15,7 @@
         overflow: hidden;
     }
 
-    .top {
+    #top {
         background-color: rgb(127, 21, 226);
         width: 100%;
         height: 40px;
@@ -44,30 +44,6 @@
         color: aliceblue;
     }
 
-    .ul2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .li2 {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    .li2:hover {
-        background-color: blueviolet;
-        border-radius: 5px;
-        transition-duration: 0.7s;
-    }
-
-    .li2:active {
-        background-color: rgb(82, 26, 134);
-        color: black;
-        border-radius: 5px;
-    }
-
     p {
         font-size: 17px;
         margin: 5px;
@@ -93,7 +69,7 @@
 
     #main {
         padding-top: 10px;
-        background-color: rgb(76, 43, 226);
+        background-image: linear-gradient(to right, rgb(140, 140, 255) , blueviolet);
         box-shadow: 1px 1px 5px #a5a5a5;
         border-radius: 3px;
     }
@@ -105,7 +81,7 @@
     }
 
     #shape1 {
-        background-color: blueviolet;
+        background-image: linear-gradient(to right, rgb(144, 144, 255) , blueviolet);
         box-shadow: 1px 1px 5px rgb(165, 165, 165);
         border-radius: 3px;
         
@@ -113,7 +89,7 @@
         }
 
     #shape2 {
-        background-color: blueviolet;
+        background-image: linear-gradient(to right, rgb(144, 144, 255) , blueviolet);
         box-shadow: 1px 1px 5px rgb(165, 165, 165);
         border-radius: 3px;
     }
@@ -162,10 +138,11 @@
 
     .start {
         color: aliceblue;
-        background-color: rgb(57, 159, 255);
+        background-color: rgb(25, 144, 255);
         width: 70%;
         height: 30px;
         position: relative;
+        outline: none;
         left: 15%;
         border: none;
         border-radius: 2px;
@@ -185,11 +162,12 @@
 
     .restxt {
         height: 60px;
-        background-color: blueviolet;
+        background-image: linear-gradient(to right, rgb(144, 144, 255) , blueviolet);
         margin: 0 auto;
         border-radius: 5px;
         text-align: center;
         padding: 10px;
+        box-shadow: 1px 1px 3px rgb(105, 105, 105);
     }
 
     .resword {
@@ -226,15 +204,17 @@
     :checked + .progress-bar .progress-color{
         width: 100%;
     }
+
+   
     
     </style>
     
  </head>   
 <body>
 
-    <div class="top">
+    <div id="top">
         <div class="detail">
-            <div class="icons"><i class="fa fa-home" style="font-size:23px;color:white"></i></div>
+            <div class="icons" id="modalbtn" onclick="ref()"><i class="fa fa-home" style="font-size:23px;color:white"></i></div>
             <div class="titlediv"><p class="title">Javascript App</p></div>
             
             <div class="icons" onclick="dark()"><i class="fa fa-bars" style="font-size:20px;color:white"></i></div>
@@ -288,6 +268,9 @@
         </div>
     </div>
 </div>
+    
+
+</div>
 
 <script>
 
@@ -324,10 +307,10 @@ function cal() {
 }
 
 function dark() {
-  document.body.style.backgroundColor = "rgb(33, 21, 88)";
+  document.body.style.backgroundColor = "rgb(40, 21, 120)";
   document.body.style.transition = "all 2s";
   document.getElementById("main").style.backgroundColor = "rgb(82, 58, 192)";
-  document.getElementById("shape1").style.backgroundColor = "rgb(82, 58, 192)";
+  document.getElementById("shape1").style.backgroundImage = "rgb(82, 58, 192)";
   document.getElementById("shape2").style.backgroundColor = "rgb(82, 58, 192)";
   document.getElementById("main").style.boxShadow = "0px 0px 0px black";
   document.getElementById("shape1").style.boxShadow = "0px 0px 0px black";
@@ -337,6 +320,13 @@ function dark() {
   document.getElementById("shape2").style.transition = "all 2s";
   document.getElementById("restxt").style.backgroundColor = "rgb(82, 58, 192)";
   document.getElementById("restxt").style.transition = "all 2s";
+  document.getElementById("top").style.backgroundColor = "rgb(100, 58, 192)";
+  document.getElementById("top").style.transition = "all 2s";
+}
+
+function ref() {
+    window.location.reload(false);
+
 }
 </script>
     
