@@ -1,0 +1,153 @@
+[18:12:05] [DEBUG] Created script domain 'ScriptDomain_F655D96' with v2.9.2.
+[18:12:05] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_F655D96' ...
+[18:12:05] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[18:12:05] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[18:12:05] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[18:12:05] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[18:12:06] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[18:12:06] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[18:12:06] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[18:12:06] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[18:12:06] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[18:12:07] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[18:12:07] [DEBUG] Starting 2 script(s) ...
+[18:12:07] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_F655D96' ...
+[18:12:08] [DEBUG] Started script 'GTACoOp.Main'.
+[18:12:08] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_F655D96' ...
+[18:12:08] [DEBUG] Started script 'GTACoOp.PedThread'.
+[18:28:37] [DEBUG] Created script domain 'ScriptDomain_65F0BE8A' with v2.9.2.
+[18:28:37] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_65F0BE8A' ...
+[18:28:37] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[18:28:38] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[18:28:38] [DEBUG] Starting 2 script(s) ...
+[18:28:38] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_65F0BE8A' ...
+[18:28:39] [DEBUG] Started script 'GTACoOp.Main'.
+[18:28:39] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_65F0BE8A' ...
+[18:28:39] [DEBUG] Started script 'GTACoOp.PedThread'.
+[19:48:47] [DEBUG] Created script domain 'ScriptDomain_308453DA' with v2.9.2.
+[19:48:47] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_308453DA' ...
+[19:48:47] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[19:48:47] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[19:48:47] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[19:48:48] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[19:48:48] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[19:48:48] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[19:48:48] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[19:48:48] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[19:48:48] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[19:48:48] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[19:48:48] [DEBUG] Starting 2 script(s) ...
+[19:48:48] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_308453DA' ...
+[19:48:49] [DEBUG] Started script 'GTACoOp.Main'.
+[19:48:49] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_308453DA' ...
+[19:48:49] [DEBUG] Started script 'GTACoOp.PedThread'.
+[19:58:18] [DEBUG] Created script domain 'ScriptDomain_A5821192' with v2.9.2.
+[19:58:18] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_A5821192' ...
+[19:58:18] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[19:58:18] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[19:58:18] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[19:58:18] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[19:58:19] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[19:58:19] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[19:58:19] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[19:58:19] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[19:58:19] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[19:58:19] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[19:58:19] [DEBUG] Starting 2 script(s) ...
+[19:58:19] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_A5821192' ...
+[19:58:20] [DEBUG] Started script 'GTACoOp.Main'.
+[19:58:20] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_A5821192' ...
+[19:58:20] [DEBUG] Started script 'GTACoOp.PedThread'.
+[23:41:02] [DEBUG] Created script domain 'ScriptDomain_D88E27C0' with v2.9.2.
+[23:41:02] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_D88E27C0' ...
+[23:41:02] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[23:41:02] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:41:02] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[23:41:02] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[23:41:03] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:41:03] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:41:03] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:41:03] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:41:03] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:41:03] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[23:41:03] [DEBUG] Starting 2 script(s) ...
+[23:41:03] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_D88E27C0' ...
+[23:41:04] [DEBUG] Started script 'GTACoOp.Main'.
+[23:41:04] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_D88E27C0' ...
+[23:41:04] [DEBUG] Started script 'GTACoOp.PedThread'.
+[23:45:16] [DEBUG] Created script domain 'ScriptDomain_95F7B83A' with v2.9.2.
+[23:45:16] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_95F7B83A' ...
+[23:45:16] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[23:45:16] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:45:17] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[23:45:17] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[23:45:17] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:45:17] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:45:17] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:45:17] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:45:17] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:45:17] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[23:45:17] [DEBUG] Starting 2 script(s) ...
+[23:45:17] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_95F7B83A' ...
+[23:45:18] [DEBUG] Started script 'GTACoOp.Main'.
+[23:45:18] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_95F7B83A' ...
+[23:45:18] [DEBUG] Started script 'GTACoOp.PedThread'.
+[23:55:39] [DEBUG] Created script domain 'ScriptDomain_F036BBFC' with v2.9.2.
+[23:55:39] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_F036BBFC' ...
+[23:55:39] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[23:55:39] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:55:39] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[23:55:40] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[23:55:40] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:55:40] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:55:40] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:55:40] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:55:40] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:55:40] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[23:55:40] [DEBUG] Starting 2 script(s) ...
+[23:55:40] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_F036BBFC' ...
+[23:55:41] [DEBUG] Started script 'GTACoOp.Main'.
+[23:55:41] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_F036BBFC' ...
+[23:55:41] [DEBUG] Started script 'GTACoOp.PedThread'.
+[23:57:36] [DEBUG] Created script domain 'ScriptDomain_CC37B326' with v2.9.2.
+[23:57:36] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_CC37B326' ...
+[23:57:36] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[23:57:36] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:57:37] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[23:57:37] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[23:57:37] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:57:37] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:57:37] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:57:37] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:57:37] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:57:37] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[23:57:37] [DEBUG] Starting 2 script(s) ...
+[23:57:37] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_CC37B326' ...
+[23:57:38] [DEBUG] Started script 'GTACoOp.Main'.
+[23:57:38] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_CC37B326' ...
+[23:57:38] [DEBUG] Started script 'GTACoOp.PedThread'.
+[23:59:24] [DEBUG] Created script domain 'ScriptDomain_76B4674A' with v2.9.2.
+[23:59:24] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_76B4674A' ...
+[23:59:24] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[23:59:24] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:59:24] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[23:59:24] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[23:59:24] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:59:25] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:59:25] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[23:59:25] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[23:59:25] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[23:59:25] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[23:59:25] [DEBUG] Starting 2 script(s) ...
+[23:59:25] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_76B4674A' ...
+[23:59:26] [DEBUG] Started script 'GTACoOp.Main'.
+[23:59:26] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_76B4674A' ...
+[23:59:26] [DEBUG] Started script 'GTACoOp.PedThread'.

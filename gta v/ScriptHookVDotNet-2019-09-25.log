@@ -1,0 +1,34 @@
+[01:52:45] [DEBUG] Created script domain 'ScriptDomain_FBFFC488' with v2.9.2.
+[01:52:45] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_FBFFC488' ...
+[01:52:46] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[01:52:46] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[01:52:46] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[01:52:46] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[01:52:47] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[01:52:47] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[01:52:48] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[01:52:48] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[01:52:48] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[01:52:48] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[01:52:48] [DEBUG] Starting 2 script(s) ...
+[01:52:48] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_FBFFC488' ...
+[01:52:50] [DEBUG] Started script 'GTACoOp.Main'.
+[01:52:50] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_FBFFC488' ...
+[01:52:50] [DEBUG] Started script 'GTACoOp.PedThread'.
+[16:41:17] [DEBUG] Created script domain 'ScriptDomain_40FF82F4' with v2.9.2.
+[16:41:17] [DEBUG] Loading scripts from 'E:\Games\Grand Theft Auto V\scripts' into script domain 'ScriptDomain_40FF82F4' ...
+[16:41:17] [DEBUG] Found 2 script(s) in 'GTACoOp.dll'.
+[16:41:17] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[16:41:17] [DEBUG] Found 0 script(s) in 'NativeUI.dll'.
+[16:41:17] [DEBUG] Found 0 script(s) in 'Newtonsoft.Json.dll'.
+[16:41:18] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[16:41:18] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[16:41:18] [DEBUG] Found 0 script(s) in 'Lidgren.Network.dll'.
+[16:41:18] [DEBUG] Found 0 script(s) in 'protobuf-net.dll'.
+[16:41:19] [DEBUG] Found 0 script(s) in 'AdminTools.dll'.
+[16:41:19] [DEBUG] Found 0 script(s) in 'Race.dll'.
+[16:41:19] [DEBUG] Starting 2 script(s) ...
+[16:41:19] [DEBUG] Instantiating script 'GTACoOp.Main' in script domain 'ScriptDomain_40FF82F4' ...
+[16:41:20] [DEBUG] Started script 'GTACoOp.Main'.
+[16:41:20] [DEBUG] Instantiating script 'GTACoOp.PedThread' in script domain 'ScriptDomain_40FF82F4' ...
+[16:41:20] [DEBUG] Started script 'GTACoOp.PedThread'.

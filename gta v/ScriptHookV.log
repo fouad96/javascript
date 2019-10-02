@@ -1,0 +1,32 @@
+// GTA V SCRIPT HOOK (build Feb 10 2019, v1.0.1604.1)
+//     (C) Alexander Blade 2015-2019
+[23:58:26] INIT: Started
+[23:58:26] INIT: Success, game version is VER_1_0_1180_2_STEAM
+[23:58:26] INIT: Registering script 'LUA.asi' (0x00007FFD4963E6A0)
+[23:58:26] INIT: Registering script 'NativeTrainer.asi' (0x00007FFD6E67A3C0)
+[23:58:27] INIT: Registering script 'ScriptHookVDotNet.asi' (0x00007FFD4F8E14A0)
+[23:58:27] INIT: Registering script 'TurboSystemV.asi' (0x00007FFD48586B10)
+[23:58:32] INIT: Pool 1 extended
+[23:58:32] INIT: Pool 2 extended
+[23:58:32] INIT: Pool 3 extended
+[23:58:32] INIT: Pool 4 extended
+[23:58:37] INIT: GtaThread collection size 189
+[23:58:37] INIT: wnd proc 0x00000000FFFF07C1
+[23:58:37] INIT: IDXGISwapChain 0x00007FFD7A35EC80 (0x00007FFD7A2F5070)
+[23:58:37] INIT: IDXGISwapChain set
+[23:58:37] INIT: DX init started
+[23:58:37] INIT: DX feature level B000
+[23:58:37] INIT: DX init succeeded
+[23:59:22] CORE: Requesting thread creation
+[23:59:22] CORE: Creating threads
+[23:59:24] CORE: Started control thread, id 30 active 1
+[23:59:24] CORE: Started thread 'LUA.asi' (0x00007FFD4963E6A0), id 31 active 1
+[23:59:24] CORE: Started thread 'NativeTrainer.asi' (0x00007FFD6E67A3C0), id 32 active 1
+[23:59:24] CORE: Started thread 'ScriptHookVDotNet.asi' (0x00007FFD4F8E14A0), id 33 active 1
+[23:59:24] CORE: Started thread 'TurboSystemV.asi' (0x00007FFD48586B10), id 34 active 1
+[23:59:24] CORE: Launching main() for 'LUA.asi' (0x00007FFD4963E6A0), id 31
+[23:59:24] CORE: Launching main() for 'NativeTrainer.asi' (0x00007FFD6E67A3C0), id 32
+[23:59:24] CORE: Launching main() for 'ScriptHookVDotNet.asi' (0x00007FFD4F8E14A0), id 33
+[23:59:24] CORE: Launching main() for 'TurboSystemV.asi' (0x00007FFD48586B10), id 34
+[23:59:41] UNINIT: Unregistering script 'ScriptHookVDotNet.asi'
+[23:59:41] UNINIT: Unregistering script 'NativeTrainer.asi'
