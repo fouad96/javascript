@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+
+            @keyframes anime {
+                0% {
+                    position: absolute;
+                    top: -0.5%;
+                }
+
+                40% {
+                    position: absolute;
+                    top: -0.5%;
+                }
+
+                60% {
+                    position: absolute;
+                    top: 60%;
+                }
+
+                100% {
+                    position: absolute;
+                    top: 60%;
+
+                }
+            }
+
+            @keyframes anime2 {
+                0% {
+                    background-color: #0062ff;
+                }
+
+                40% {
+                    background-color: #0062ff;
+                }
+
+                60% {
+                    background-color: black;
+                }
+
+                100% {
+                    background-color: black;
+
+                }
+            }
+        
+        html,body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'roboto', Helvetica, sans-serif;
+            animation: anime2 2s linear infinite alternate;
+        }
+
+        .main {
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .switch {
+            position: absolute;
+            top: 20%;
+            left: 21%;
+            width: 86px;
+            height: 210px;
+            border: 4px solid white;
+            border-radius: 100px;
+        }
+
+        .n {
+            font-size: 108px;
+            color: white;
+            position: absolute;
+            top: -6%;
+            left: 50%;
+        }
+
+        .o {
+            font-size: 105px;
+            color: white;
+            position: absolute;
+            top: 32%;
+            left: 50%;
+        }
+
+        .circle {
+            animation: anime 2s linear infinite alternate;
+            width: 60px;
+            height: 60px;
+            border: 13px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: -0.5%;
+            left: 0.4%;
+        }
+        
+        
+        </style>
+    </head>
+    <body>
+
+        <div class="main">
+
+            <div class="switch">
+                <div class="circle"></div>
+            </div>
+
+            <h1 class="n">N</h1>
+            <h1 class="o">FF</h1>
+
+        </div>
+
+    </body>
+</html>
