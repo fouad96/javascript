@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<PlayerSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <DisplayName>fouad</DisplayName>
-  <MaxStreamedNpcs>10</MaxStreamedNpcs>
-  <MasterServerAddress>http://46.101.1.92/</MasterServerAddress>
-  <ActivationKey>F9</ActivationKey>
-</PlayerSettings>
