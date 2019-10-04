@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+
+        @keyframes anime {
+            100% {
+                transform: scale(2.7);
+                background-color: transparent;
+            }
+        }
+
+        @keyframes anime2 {
+            100% {
+                transform: scale(1.5);
+            }
+        }
+
+        @keyframes change {
+            100% {
+                background-color: transparent;
+                color: transparent;
+            }
+        }
+
+html,body {
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .main {
+            
+            width: 270px;
+            height: 360px;
+            transform-style: preserve-3d;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50px 50px 0 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 150px;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: inset rgb(110, 110, 110) -7px 2px 20px 10px, rgba(143, 143, 143, 0.726) -10px 0px 10px;
+        }
+
+        .cover {
+
+            width: 240px;
+            height: 340px;
+            border-radius: 30px 30px 0 0;
+            transform-style: preserve-3d;
+            background-color: rgb(0, 0, 0);
+            border: 0.5px solid black; 
+            position: absolute;
+            top: 18px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: inset rgb(36, 36, 36) 10px 5px 20px;
+            box-shadow: rgb(0, 0, 0) -20px 20px 20px;
+            
+        }
+
+        .clock {
+            color: rgba(240, 248, 255, 0.678);
+            font-size: 18px;
+            position: absolute;
+            top: 24px;
+            left: 68%;
+            font-family: 'roboto', Helvetica, sans-serif;
+
+        }
+
+        .player {
+            color: rgba(240, 248, 255, 0.678);
+            font-size: 22px;
+            position: absolute;
+            top: 15px;
+            left: 15%;
+            font-family: 'roboto', Helvetica, sans-serif;
+
+        }
+
+        .down {
+            width: 270px;
+            height: 150px;
+            transform-style: preserve-3d;
+            background-color: rgb(211, 211, 211);
+            border-radius: 0px 0px 50px 50px;
+            position: absolute;
+            top: 60%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: inset rgb(63, 63, 63) 10px -7px 20px 7px, rgba(143, 143, 143, 0.726) -10px 0px 10px;
+        }
+
+        .whiteback {
+            width: 220px;
+            height: 115px;
+            transform-style: preserve-3d;
+            background-color: rgb(236, 236, 236);
+            border-radius: 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 5px;
+            margin: auto;
+            box-shadow: rgb(236, 236, 236) 0px 0px 5px 1px;
+        }
+
+        .black {
+            width: 218px;
+            height: 113px;
+            transform-style: preserve-3d;
+            background-color: rgb(0, 0, 0);
+            border-radius: 30px;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            left: 0;
+            bottom: 6px;
+            margin: auto;
+            overflow: hidden;
+
+        }
+
+        .circle {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+            border: 2px solid rgb(151, 151, 151);
+        }
+
+        .circle2 {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            border: 2px solid rgb(83, 83, 83);
+        }
+
+        .shine {
+            width: 150px;
+            height: 150px;
+            background-color: rgba(240, 248, 255, 0.274);
+            transform: rotate(60deg);
+            position: absolute;
+            top: 10px;
+            right: 120px;
+        }
+
+        .shine2 {
+            width: 350px;
+            height: 350px;
+            background-color: rgba(255, 255, 255, 0.171);
+            transform: rotate(60deg);
+            position: absolute;
+            top: 100px;
+            right: 140px;
+        }
+
+    </style>
+  </head>
+<body>
+
+    <div class="main">
+        <div class="cover">
+            <h1 class="clock">11:23</h1>
+            <h1 class="player">Voice</h1>
+            <div class="shine2"></div>
+        </div>
+    </div>
+
+    <div class="down">
+        <div class="whiteback"></div>
+        <div class="black">
+            <div class="shine"></div>
+            <div class="circle">
+                <div class="circle2"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

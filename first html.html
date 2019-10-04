@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+
+      body {
+        background-color:aliceblue;
+        padding: 30px;
+      }
+
+      .navbar {
+        width: 100%;
+        background-color: rgb(109, 121, 255);
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: 1px 1px 5px rgb(161, 161, 161);
+        
+      }
+
+      .obj2 {
+        text-align: center;
+      }
+
+     .details {
+        width: 100%;
+        height: 240px;
+        background-image: linear-gradient(to right, rgb(235, 235, 255) , rgb(238, 238, 255));
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 1px 1px 5px rgb(161, 161, 161);
+     }
+
+     .obj1 {
+        text-align: center;
+        background:rgba(255, 255, 255, 0);
+        
+      }
+      
+
+      .img {
+        content: url("https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg");
+        width: 130px;
+        height: 180px;
+        margin: 0 auto;
+        transition: 0.5s;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 3px;
+        box-shadow: 1px 1px  4px black;
+      }
+
+      .toptxt {
+        color: rgb(65, 65, 65);
+        position: relative;
+        top: 40%;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        color: rgb(235, 235, 235);
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+        color: rgb(65, 65, 65);
+        position: relative;
+        top: 50%;
+        font-size: 18px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      a:hover {
+        color: rgb(89, 89, 255);
+      }
+
+      .icon {
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        transition: 0.5s;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        content: url("https://www.freeiconspng.com/uploads/downloads-icon-15.png");
+
+      }
+
+      #pic1 {
+        border-bottom-left-radius: 5px;
+      }
+
+      #pic2 {
+        border-bottom-right-radius: 5px;
+      }
+
+      .img:hover {
+          
+          box-shadow: 1px 1px  8px black;
+          width: 140px;
+          height: 190px;
+          
+        }
+
+        button {
+          background:rgb(101, 98, 255);
+          border: none;
+          outline: none;
+        }
+
+        button:hover {
+          cursor: pointer;
+          box-shadow: 1px 1px 7px gray;
+          transition-duration: 0.2s;
+        }
+
+      img {
+        margin: 0 auto;
+        width:50px;
+        height: 40px;
+        content: url("https://www.freeiconspng.com/uploads/white-download-icon-png-32.png");
+      }
+
+    </style>
+  </head>
+<body>
+
+  <div class="navbar">
+
+    <div class="obj2" id="radius1">
+      <p>movie</p>
+    </div>
+    <div class="obj2">
+      <p>name</p>
+    </div>
+    <div class="obj2">
+      <p>rate</p>
+    </div>
+    <div class="obj2" id="radius2">
+      <p>subdown</p>
+    </div>
+    
+</div>
+
+    <div class="details">
+
+      <div class="obj1" id="pic1">
+        <div class="img"></div>
+      </div>
+
+      <div class="obj1">
+        <a href="#">The Avengers</a>
+      </div>
+
+      <div class="obj1">
+          <p class="toptxt">8.1</p>
+        </div>
+
+      <div class="obj1" id="pic2">
+          <button class="icon">
+            <img>
+          </button>
+      </div>
+
+    </div>
+
+
+</body>
+</html>

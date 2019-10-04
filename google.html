@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+
+@keyframes move {
+        from {
+          
+
+        }to {
+
+           transform: rotate(1turn);
+
+          }
+      }
+
+      @keyframes fishmove {
+        from {
+          
+
+        }to {
+
+           margin-left: 170px;
+
+          }
+      }
+
+      @keyframes sunrise {
+        from {
+          
+
+        }to {
+
+           margin-top: 20px;
+           
+
+          }
+      }
+
+      @keyframes plan {
+        from {
+          
+
+        }to {
+
+           margin-top: 18px;
+
+          }
+      }
+
+    html,body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+      }
+
+      .main {
+        width: 570px;
+        height: 550px;
+        margin: auto;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .new {
+        position: relative;
+        top: 8%;
+        left: 33%;
+        width: 190px;
+        height: 190px;
+        background-image:linear-gradient(to left, rgb(100, 21, 14), #DB4437);
+        border-top-left-radius: 100%;
+        transform: rotate(45deg);
+        overflow: hidden;
+      }
+
+      .new1 {
+        position: relative;
+        left: 9.5%;
+        bottom: 2.2%;
+        width: 190px;
+        height: 190px;
+        background-image:linear-gradient( rgb(255, 206, 72), rgb(124, 4, 0));
+        border-top-left-radius: 100%;
+        transform: rotate(-45deg);
+        overflow: hidden;
+      }
+
+      .new2 {
+        position: relative;
+        bottom: 36.7%;
+        left: 56.6%;
+        width: 190px;
+        height: 190px;
+        background-color: #4285F4;
+        border-top-left-radius: 100%;
+        transform: rotate(135deg);
+        overflow: hidden;
+      }
+
+      .new3 {
+        position: relative;
+        bottom: 47%;
+        left: 33%;
+        width: 190px;
+        height: 190px;
+        background-color: #0F9D58;
+        border-top-left-radius: 100%;
+        transform: rotate(-135deg);
+        overflow: hidden;
+      }
+
+      .circle {
+        position: absolute;
+        left: 32%;
+        top: 31%;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+      }
+
+      .mount {
+        position: absolute;
+        left: 70%;
+        top: 12%;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(73, 0, 0);
+      }
+
+      .mount2 {
+        position: absolute;
+        left: 60%;
+        top: 40%;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(116, 0, 0);
+      }
+
+      .mount3 {
+        position: absolute;
+        left: 30%;
+        top: 85%;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(110, 0, 0);
+      }
+
+      .mount1 {
+        position: absolute;
+        left: 20%;
+        top: 90%;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(110, 0, 0);
+      }
+
+      .planet1 {
+        position: absolute;
+        left: 10%;
+        top: 80%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-image:linear-gradient(to left, rgb(20, 18, 155), rgb(120, 156, 255));
+
+      }
+
+      .planet2 {
+        animation: plan 2s linear infinite;
+        animation-direction: alternate;
+        background-color: rgb(255, 254, 246);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: 10%;
+        left: 48%;
+        transform-style: preserve-3d;
+        background-image:linear-gradient(to right, rgb(255, 138, 42), rgb(68, 39, 0));
+
+      } 
+
+      .ring {
+        animation: plane 2s linear infinite;
+        animation-direction: alternate;
+        width: 150%;
+        height: 150%;
+        border: solid 10px rgb(255, 219, 121);
+        border-radius: 50%;
+        top: -25%; 
+        left: -25%; 
+        position: absolute;
+        transform: rotate3d(0.8, 0.2, 0, 75deg); 
+        box-sizing: border-box;
+      }
+
+      .earth1 {
+        position: absolute;
+        right: 20%;
+        top: 30%;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image:linear-gradient( rgb(255, 196, 2), rgb(59, 22, 0));
+
+      }
+
+      .earth2 {
+        position: absolute;
+        right: 40%;
+        top: 35%;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image:linear-gradient( rgb(255, 216, 89), rgb(109, 40, 0));
+
+      }
+
+      .earth3 {
+        position: absolute;
+        right: 30%;
+        top: 55%;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image:linear-gradient( rgb(255, 196, 0), rgb(65, 24, 0));
+
+      }
+
+      .sun {
+        animation: sunrise 3s linear infinite;
+        animation-direction: alternate;
+        background-color: rgb(255, 254, 246);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        left: 14%;
+        box-shadow: 0px 0px  50px 10px rgb(255, 245, 98);
+      
+      }
+
+      .earth5 {
+        position: absolute;
+        right: 61%;
+        top: 10%;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image:linear-gradient( rgb(36, 255, 149), rgb(5, 100, 54));
+
+      }
+
+      .earth4 {
+        position: absolute;
+        left: 0%;
+        top: -55%;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        background-image:linear-gradient( rgb(255, 255, 255), rgb(0, 158, 82));
+
+      }
+
+      .tree2 {
+        position: absolute;
+        right: 35%;
+        top: 62%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transform: rotate(30deg);
+        background-image:linear-gradient(to right, rgb(36, 255, 149), rgb(5, 100, 54));
+      }
+
+      .tree1 {
+        position: absolute;
+        right: 38.7%;
+        top: 70.5%;
+        width: 6px;
+        height: 30px;
+        border-radius: 10%;
+        background-image:linear-gradient( rgb(5, 100, 54), rgb(21, 150, 88));
+      }
+
+      .tree3 {
+        position: absolute;
+        right: 55%;
+        top: 70%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transform: rotate(30deg);
+        background-image:linear-gradient(to right, rgb(36, 255, 149), rgb(0, 134, 69));
+      }
+
+      .tree4 {
+        position: absolute;
+        right: 57.4%;
+        top: 72%;
+        width: 4px;
+        height: 30px;
+        border-radius: 10%;
+        background-image:linear-gradient( rgb(8, 161, 87), rgb(21, 150, 88));
+      }
+
+      .mainfan {
+        animation: move 2s linear infinite;
+        position: absolute;
+        top: 58.4%;
+        left: 38.5%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        
+      }
+
+      .fan1 {
+        margin: 0 auto;
+        position: relative;
+        top: -261%;
+        width: 0px;
+        height: 0px;
+        border-bottom: 30px solid black;
+        border-left: 1.8px solid transparent;
+        border-right: 1.8px solid transparent;
+
+      }
+
+      .fan2 {
+        margin: 0 auto;
+        position: absolute;
+        top: -27%;
+        left: 170%;
+        width: 0px;
+        height: 0px;
+        border-bottom: 31px solid black;
+        border-left: 1.8px solid transparent;
+        border-right: 1.8px solid transparent;
+        transform: rotate(120deg);
+
+      }
+
+      .fan3 {
+        position: absolute;
+        top: -29%;
+        left: -100%;
+        width: 0px;
+        height: 0px;
+        border-bottom: 31px solid black;
+        border-left:1.8px solid transparent;
+        border-right: 1.8px solid transparent;
+        transform: rotate(240deg);
+
+      }
+
+      .fan4 {
+        position: absolute;
+        left: 39%;
+        top: 59%;
+        width: 4px;
+        height: 60px;
+        background-image:linear-gradient( rgb(0, 0, 0), rgb(12, 167, 92));
+
+      }
+
+      .shape {
+        position: absolute;
+        left: 52%;
+        top: 15.1%;
+        width: 0;
+        height: 0;
+        border-bottom: 150px solid rgb(255, 255, 255);
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+      }
+
+      .shape1 {
+        position: absolute;
+        bottom: 44%;
+        left: 49.8%;
+        border-bottom-right-radius: 32px;
+        border-top-right-radius: 32px;
+        width: 189px;
+        height: 75px;
+        background-color: #4285F4;
+        overflow: hidden;
+      }
+
+      .allfishs {
+        animation: fishmove 6s linear infinite;
+        position: absolute;
+        margin-left: -130px;
+        width: 130px;
+        height: 70px;
+        
+      }
+
+      .fish {
+        position: absolute;
+        top: 10%;
+        left: 70%;
+        width: 28px;
+        height: 28px;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        transform: rotate(45deg);
+        background-color: rgb(12, 51, 112);
+      }
+
+      .fish1 {
+        position: absolute;
+        top: 23%;
+        left: 58%;
+        width: 15px;
+        height:9px;
+        border-radius: 10px 10px 0 0;
+        transform: rotate(90deg);
+        background-color: rgb(12, 51, 112);
+      }
+
+      .fish2 {
+        position: absolute;
+        top: 33%;
+        left: 45%;
+        width: 18px;
+        height: 18px;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        transform: rotate(45deg);
+        background-color: rgb(17, 75, 167);
+      }
+
+      .fish3 {
+        position: absolute;
+        top: 40.9%;
+        left: 37%;
+        width: 10px;
+        height: 6px;
+        border-radius: 10px 10px 0 0;
+        transform: rotate(90deg);
+        background-color: rgb(17, 75, 167);
+      }
+
+      .fish4 {
+        position: absolute;
+        top: 8%;
+        left: 30%;
+        width: 16px;
+        height: 16px;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        transform: rotate(45deg);
+        background-color: rgb(23, 89, 196);
+      }
+
+      .fish5 {
+        position: absolute;
+        top: 15.5%;
+        left: 23%;
+        width: 9px;
+        height: 5px;
+        border-radius: 10px 10px 0 0;
+        transform: rotate(90deg);
+        background-color: rgb(23, 89, 196);
+      }
+
+      .fish6 {
+        position: absolute;
+        top: 55%;
+        left: 70%;
+        width: 10px;
+        height: 10px;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        transform: rotate(45deg);
+        background-color: rgb(10, 57, 133);
+      }
+
+      .fish7 {
+        position: absolute;
+        top: 60%;
+        left: 65%;
+        width: 7px;
+        height: 3px;
+        border-radius: 10px 10px 0 0;
+        transform: rotate(90deg);
+        background-color: rgb(10, 57, 133);
+      }
+
+      .fish8 {
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        width: 30px;
+        height: 30px;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        transform: rotate(45deg);
+        background-color: rgb(50, 114, 218);
+      }
+
+      .fish9 {
+        position: absolute;
+        top: 75%;
+        left: 19%;
+        width: 15px;
+        height: 8px;
+        border-radius: 10px 10px 0 0;
+        transform: rotate(90deg);
+        background-color: rgb(50, 114, 218);
+      }
+
+
+</style>
+</head>
+<body>
+
+<div class="main">
+
+<div class="new">
+
+  <div class="planet1"></div>
+
+  <div class="mount"></div>
+  <div class="mount1"></div>
+  <div class="mount2"></div>
+  <div class="mount3"></div>
+
+</div>
+
+
+<div class="new1">
+
+  <div class="earth1"></div>
+  <div class="earth2"></div>
+  <div class="earth3"></div>
+
+</div>
+
+<div class="sun"></div>
+
+<div class="new2">
+
+</div>
+<div class="new3">
+
+  <div class="earth4"></div>
+  <div class="earth5"></div>
+
+</div>
+
+<div class="circle"></div>
+
+<div class="shape"></div>
+<div class="shape1">
+
+  <div class="allfishs">
+
+  <div class="fish"></div>
+  <div class="fish1"></div>
+
+  <div class="fish2"></div>
+  <div class="fish3"></div>
+
+  <div class="fish4"></div>
+  <div class="fish5"></div>
+
+  <div class="fish6"></div>
+  <div class="fish7"></div>
+
+  <div class="fish8"></div>
+  <div class="fish9"></div>
+
+ </div>
+</div>
+
+<div class="tree1"></div>
+<div class="tree2"></div>
+
+<div class="tree4"></div>
+<div class="tree3"></div>
+
+<div class="mainfan">
+
+<div class="fan1"></div>
+<div class="fan2"></div>
+<div class="fan3"></div>
+
+</div>
+
+<div class="fan4"></div>
+
+<div class="planet2">
+  <div class="ring"></div>
+  </div>
+
+</div>
+
+</body>
+</html>

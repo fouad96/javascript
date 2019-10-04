@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <style>
+    
+    body {
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    #top {
+        background-color: rgb(127, 21, 226);
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        box-shadow: 1px 1px 4px gray;
+    }
+
+    .detail {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: 0fr 1fr 0fr;
+        
+    }
+
+    .titlediv {
+        height: 30px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        margin: 0px;
+        margin-top: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+    }
+
+    p {
+        font-size: 17px;
+        margin: 5px;
+        align-items: center;
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .avatar {
+        font-size: 17px;
+        text-align: center;
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    i {
+        padding: 3px;
+    }
+
+    .all div {
+        padding: 5px;
+    }   
+
+    #main {
+        padding-top: 10px;
+        background-image: linear-gradient(to right, rgb(140, 140, 255) , blueviolet);
+        box-shadow: 1px 1px 5px #a5a5a5;
+        border-radius: 3px;
+    }
+
+    .shapes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #shape1 {
+        background-image: linear-gradient(to right, rgb(144, 144, 255) , blueviolet);
+        box-shadow: 1px 1px 5px rgb(165, 165, 165);
+        border-radius: 3px;
+        
+        
+        }
+
+    #shape2 {
+        background-image: linear-gradient(to right, rgb(144, 144, 255) , blueviolet);
+        box-shadow: 1px 1px 5px rgb(165, 165, 165);
+        border-radius: 3px;
+    }
+
+    .imgdiv {
+        width: 100%;
+        height: 65%;
+    }
+
+    #img {
+        width: 120px;
+        height: 120px;
+        content: url("https://cdn1.iconfinder.com/data/icons/avatar-3/512/Manager-512.png");
+        margin: 0 auto;
+        position: relative;
+        top: 5%;
+        border-radius: 50%;
+        border: dashed 2px;
+        transition-duration: 1s;
+    }
+
+    .boxs1 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .boxs2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 70px;
+        height: 35px;
+        border-radius: 2px;
+        border: none;
+        
+    }
+
+    .res {
+        text-align: center;
+        font-size: 40px;
+        transition-duration: 1s;
+    }
+
+    .start {
+        color: aliceblue;
+        background-color: rgb(25, 144, 255);
+        width: 70%;
+        height: 30px;
+        position: relative;
+        outline: none;
+        left: 15%;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 1px 1px 5px rgb(105, 105, 105);
+        transition-duration: 0.5s;
+    }
+
+    .start:hover {
+        background-color: rgb(126, 193, 255);
+    }
+
+    .resdiv {
+        width: 98%;
+        height: 30px;
+        margin: 0 auto;
+    }
+
+    .restxt {
+        height: 60px;
+        background-image: linear-gradient(to right, rgb(144, 144, 255) , blueviolet);
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 1px 1px 3px rgb(105, 105, 105);
+    }
+
+    .resword {
+        font-size: 20px;
+    }
+
+    .fullbar {
+        margin: 5px;
+        height: 20px;
+        background-color: #DDD;
+        overflow: hidden;
+        border: 1px solid #BBB;
+        -webkit-border-radius: 15px;
+           -moz-border-radius: 15px;
+                border-radius: 15px;
+    }
+    .mainbar {
+        background-color: rgb(255, 166, 0);
+        background-size: 40px 40px;
+        width: 0%;
+        height: 20px;
+        -webkit-transition: width 2s ease;
+           -moz-transition: width 2s ease;
+            -ms-transition: width 2s ease;
+             -o-transition: width 2s ease;
+                transition: width 2s ease;
+        -webkit-animation: bganim 3s linear 2s infinite;
+           -moz-animation: bganim 3s linear 2s infinite;
+            -ms-animation: bganim 3s linear 2s infinite;
+             -o-animation: bganim 3s linear 2s infinite;
+                animation: bganim 3s linear 2s infinite;
+    }
+
+    :checked + .progress-bar .progress-color{
+        width: 100%;
+    }
+
+   
+    
+    </style>
+    
+ </head>   
+<body>
+
+    <div id="top">
+        <div class="detail">
+            <div class="icons" id="modalbtn" onclick="ref()"><i class="fa fa-home" style="font-size:23px;color:white"></i></div>
+            <div class="titlediv"><p class="title">Javascript App</p></div>
+            
+            <div class="icons" onclick="dark()"><i class="fa fa-bars" style="font-size:20px;color:white"></i></div>
+        </div>
+
+        
+    </div>
+
+<div class="all">
+
+    <div id="main">
+        <div class="avatardiv">
+        <p class="avatar">Avatar</p>
+
+            <div class="imgdiv">
+                <div id="img"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="shapes">
+        <div id="shape1">
+            <div class="boxs1">
+                <input id="val1" type="number">
+                <p>KG</p>
+            </div>
+            
+            <div class="boxs2">
+                <input id="val2" type="number">
+                <p>M</p>
+            </div>
+           
+        </div>
+        <div id="shape2">
+            <p id="result" class="res">0</p>
+            <button onclick="cal()" class="start">Start</button>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<div class="resdiv">
+    <div class="restxt" id="restxt">
+        <p class="resword" id="resword">...</p>
+        <div class="fullbar">
+            <div class="mainbar" id="mainbar"></div>
+        </div>
+    </div>
+</div>
+    
+
+</div>
+
+
+<script>
+
+function cal() {
+  var x = document.getElementById("val1").value;
+  var y = document.getElementById("val2").value;
+  var xy = (x/(y*y));
+  res = Math.round(xy);
+  document.getElementById("result").innerHTML = res;
+  if(res < 18) {
+    document.getElementById("resword").innerHTML = "Underweight";
+    document.getElementById("mainbar").style.width = "25%";
+    document.getElementById("mainbar").style.backgroundColor = "rgb(255, 166, 0)";
+    document.getElementById("mainbar").style.transition = "all 2s";
+
+  }else if(18 < res , res < 25) {
+    document.getElementById("resword").innerHTML = "Healthy weight";
+    document.getElementById("mainbar").style.width = "50%";
+    document.getElementById("mainbar").style.backgroundColor = "rgb(13, 218, 74)";
+    document.getElementById("mainbar").style.transition = "all 2s";
+
+  }else if (25 < res , res < 30) {
+    document.getElementById("resword").innerHTML = "Overweight";
+    document.getElementById("mainbar").style.width = "75%";
+    document.getElementById("mainbar").style.backgroundColor = "rgb(255, 68, 140)";
+    document.getElementById("mainbar").style.transition = "all 2s";
+
+  }else if(res > 30) {
+    document.getElementById("resword").innerHTML = "Obese";
+    document.getElementById("mainbar").style.width = "100%";
+    document.getElementById("mainbar").style.backgroundColor = "red";
+    document.getElementById("mainbar").style.transition = "all 2s";
+  }
+}
+
+function dark() {
+  document.body.style.backgroundColor = "rgb(40, 21, 120)";
+  document.body.style.transition = "all 2s";
+  document.getElementById("main").style.backgroundColor = "rgb(82, 58, 192)";
+  document.getElementById("shape1").style.backgroundImage = "rgb(82, 58, 192)";
+  document.getElementById("shape2").style.backgroundColor = "rgb(82, 58, 192)";
+  document.getElementById("main").style.boxShadow = "0px 0px 0px black";
+  document.getElementById("shape1").style.boxShadow = "0px 0px 0px black";
+  document.getElementById("shape2").style.boxShadow = "0px 0px 0px black";
+  document.getElementById("main").style.transition = "all 2s";
+  document.getElementById("shape1").style.transition = "all 2s";
+  document.getElementById("shape2").style.transition = "all 2s";
+  document.getElementById("restxt").style.backgroundColor = "rgb(82, 58, 192)";
+  document.getElementById("restxt").style.transition = "all 2s";
+  document.getElementById("top").style.backgroundColor = "rgb(100, 58, 192)";
+  document.getElementById("top").style.transition = "all 2s";
+}
+
+function ref() {
+    window.location.reload(false);
+
+}
+      
+</script>
+    
+
+</body>
+</html>
