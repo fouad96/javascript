@@ -8,7 +8,26 @@
             <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <style>
 
-@keyframes anime {
+        @keyframes time {
+            0% {
+                background-color: transparent;
+            }
+            100% {
+                background-color: white;
+            }
+        }
+
+        @keyframes time2 {
+            0% {
+                background-color: white;
+            }
+            100% {
+                background-color: transparent;
+            }
+        }
+
+
+        @keyframes anime {
             100% {
                 transform: scale(2.7);
                 background-color: transparent;
@@ -196,6 +215,25 @@
                 
             }
 
+            #icon1s {
+                color: aliceblue;
+                position: relative;
+                top: 5px;
+                left: 5px;
+            }
+
+            #tab {
+                width: 130px;
+                height: 160px;
+                border-radius: 7px;
+                position: relative;
+                left: 30px;
+                bottom: 12px;
+                display: none;
+                background-color: rgb(255, 255, 255);
+                box-shadow: rgba(0, 0, 0, 0.13) 0 0 5px 2px;
+            }
+
 </style>
 </head>
 
@@ -208,17 +246,37 @@
     
             function stop() {
                 center1.style.animation = "";
-    
+            }
+
+            function show() {
+                tab.style.animation = "time 1s linear";
+                tab.style.display = "flex";
+                icon1s.style.display = "none";
+            }
+
+            function hide() {
+                tab.style.animation = "time 1s linear";
+                tab.style.display = "none";
+                icon1s.style.display = "flex";
+            }
+
+            function aler() {
+                alert("welcome to myapp");
             }
           </script>
 
     <div class="head">
         <div class="in">
-        <i class="large material-icons" id="icon1">clear_all</i>
+        <i class="large material-icons" id="icon1"  type="button" onclick="hide()">clear_all</i>
         <h1 class="name">My App</h1>
-        <i class="large material-icons" id="icon2">home</i>
+        <i class="large material-icons" id="icon2" type="button" onclick="aler()">home</i>
         </div>
+
+        <div id="tab"></div>
     </div>
+
+    <i class="large material-icons" id="icon1s"  type="button" onclick="show()">clear_all</i>
+
 
     <div class="main">
         <div id="center1"></div>
