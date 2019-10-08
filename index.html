@@ -35,14 +35,13 @@
             height: 100%;
             width: 100%;
             font-family: 'roboto', Helvetica, sans-serif;
-            background: rgb(2, 0, 97);
         }
 
         .head {
+            background: linear-gradient( rgb(161, 47, 255) , rgb(37, 202, 243));
             position: absolute;
             width: 100%;
-            height: 40px;
-            background: rgba(0, 0, 216, 0.562);
+            height: 85%;
             box-shadow: rgba(0, 0, 0, 0.288) 0 0 5px 2px;
             overflow: hidden;
             
@@ -70,13 +69,13 @@
         .name {
             text-align: center;
             color: aliceblue;
-            font-size: 18px;
-            margin-top: 1px;
+            font-size: 14px;
+            margin-top: 3px;
         }
 
         .shape {
-            background: rgb(0, 0, 184);
-            width: 96%;
+            background: rgb(255, 255, 255);
+            width: 94%;
             height: 110px;
             position: absolute;
             top: 70%;
@@ -85,6 +84,7 @@
             bottom: 0;
             margin: auto;
             border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.13) 0 0 5px 2px;
             overflow: hidden;
         }
 
@@ -94,34 +94,32 @@
             top: 0;
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 20px;
             display: grid;
             grid-template-columns: 0fr 1fr 0fr;
             width: 70%;
-            height: 60%;
+            height: 45%;
         }
 
-        .btn1 {
-            background: rgb(0, 230, 57);
-            width: 70px;
-            height: 70px;
+        #btn1 {
+            color: rgb(117, 117, 117);
+            font-size: 50px;
             border-radius: 50%;
         }
 
-        .btn1:active {
-            background: rgb(195, 214, 195);
+        #btn1:active {
+            color: black;
             
         }
 
-        .btn2 {
-            background: rgb(255, 67, 60);
-            width: 70px;
-            height: 70px;
+        #btn2 {
+            color: rgb(117, 117, 117);
+            font-size: 50px;
             border-radius: 50%;
         }
 
-        .btn2:active {
-            background: rgba(255, 3, 3, 0.534);
+        #btn2:active {
+            color: black;
             
         }
 
@@ -153,7 +151,7 @@
             width: 70px;
             height: 70px;
             border-radius: 50%;
-            background-color: rgb(255, 85, 85);
+            background-color: rgba(255, 255, 255, 0.253);
 
             }
 
@@ -167,8 +165,35 @@
             width: 70px;
             height: 70px;
             border-radius: 50%;
-            background-color: rgb(255, 85, 85);
+            background-color: rgba(255, 255, 255, 0.26);
 
+            }
+
+            .intxt {
+                position: absolute;
+                margin: 0 auto;
+                top: 60px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 70%;
+                height: 50px;
+                display: grid;
+                grid-template-columns: 0fr 1fr 0fr;
+            }
+
+            .scan {
+                margin-left: 8px;
+                font-size: 17px;
+                color: rgb(117, 117, 117);
+                
+            }
+
+            .stop {
+                margin-right: 8px;
+                font-size: 17px;
+                color: rgb(117, 117, 117);
+                
             }
 
 </style>
@@ -179,12 +204,10 @@
         <script type="text/javascript">
             function start() {
                 center1.style.animation = "anime 1s linear infinite";
-                center2.style.animation = "anime2 1.5s linear infinite alternate";
             }
     
             function stop() {
                 center1.style.animation = "";
-                center2.style.animation = "";
     
             }
           </script>
@@ -203,10 +226,15 @@
     </div>
 
     <div class="shape">
+        <div class="intxt">
+            <h1 class="scan">scan</h1>
+            <h1></h1>
+            <h1 class="stop">stop</h1>
+        </div>
         <div class="in2">
-            <div class="btn1" type="button" onclick="start()"></div>
+            <i class ='large material-icons' id="btn1" type="button" onclick="start()">wifi_tethering</i>
             <h1 class="txt"></h1>
-            <div class="btn2" type="button" onclick="stop()"></div>
+            <i class ='large material-icons' id="btn2" type="button" onclick="stop()">close</i>
         </div>
     </div>
     
